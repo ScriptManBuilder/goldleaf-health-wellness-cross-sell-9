@@ -23,6 +23,7 @@ const Footer: React.FC = () => {
   const companyAddress = process.env.REACT_APP_COMPANY_ADDRESS || 'E 2ND ST 5830 Casper WY US 82609';
   const companyPhone = process.env.REACT_APP_PHONE_DISPLAY || '+1 517-258-3818';
   const supportEmail = process.env.REACT_APP_EMAIL_SUPPORT || 'support@williamhealthperks.com';
+  const companyBirth = process.env.REACT_APP_COMPANY_BIRTH || 'March 2023';
 
   const handleScrollTo = (id: string) => {
     // Check if we're on the home page
@@ -68,7 +69,7 @@ const Footer: React.FC = () => {
             <CompanyInfo>
               <p>{companyName}</p>
               <p>{companyAddress}</p>
-              <p>Established March 2023</p>
+              <p>Established {companyBirth}</p>
             </CompanyInfo>
           </FooterSection>
 
