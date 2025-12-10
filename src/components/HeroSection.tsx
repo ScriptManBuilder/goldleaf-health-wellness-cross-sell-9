@@ -12,11 +12,10 @@ import {
 } from '../styles/HeroSection.styles';
 
 const HeroSection: React.FC = () => {
+  const appSubdomain = process.env.REACT_APP_APP_SUBDOMAIN || 'app.goldleafhealthperks.com';
+
   const handleGetStarted = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.open(`https://${appSubdomain}`, '_blank');
   };
 
   const handleLearnMore = () => {
